@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - print the last digit of the number stored in the variable
+ * main - print the last digit of a radom number stored in the variable n
+ * and if its > five, <six or zero
  *
  * Return: success always 0
  */
