@@ -14,15 +14,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if ((n * 2.5) > 5)
 	{
-	printf("last digit of %lf is %lf and is greater than 5", n, n * 2.5);
+	printf("last digit of %lf is %lf and is greater than 5*n", n, n * 2.5);
 	}
 	else if ((n * 2.5) < 6 && (n * 2.5) != 0)
 	{
-	printf("last digit of %lf is %lf and is less than 6 and not 0", n, n * 2.5);
+	printf("last digit of %lf is %lf and is less than 6 and not 0*n", n, n * 2.5);
 	}
 	else
 	{
-	printf("last digit of %lf is %lf and is 0", n, n * 2.5);
+	printf("last digit of %lf is %lf and is 0*n", n, n * 2.5);
 	}
 	return (0);
 }
