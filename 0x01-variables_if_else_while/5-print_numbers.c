@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int y;
+	int num;
 
-	for (y = 0; y <= 9 ; y++)
-	printf("%d\n",y);
+	for (num = 0; num <= 9 ; num++)
+	printf("%d\n", num);
 	return (0);
 }
