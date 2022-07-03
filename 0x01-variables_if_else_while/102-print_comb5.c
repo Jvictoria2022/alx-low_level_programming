@@ -9,11 +9,11 @@ int main(void)
 {
 	int num1, num2, num3, num4, num5, num6;
 
-	for (num5 = 0; num5 < 100; num5++)
+	for (num5 = 0; num5 < 98; num5++)
 	{
 	num1 = num5 / 10;
 	num2 = num5 % 10;
-	for (num6 = 0; num6 < 100; num6++)
+	for (num6 = 0; num6 < 99; num6++)
 	{
 	num3 = num6 / 10;
 	num4 = num6 % 10;
