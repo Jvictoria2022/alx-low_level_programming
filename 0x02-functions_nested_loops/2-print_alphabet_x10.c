@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 	int product = 0;
 	char tAlpha;
 
-	while (product++ <= 9)
+	while (product <= 9)
 	{
 
 	for (tAlpha = 97; tAlpha = 122; tAlpha++)
