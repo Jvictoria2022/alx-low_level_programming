@@ -7,8 +7,8 @@
  */
 void print_alphabet_x10(void)
 {
-	char tAlpha;
 	int product = 0;
+	char tAlpha;
 
 	while (product++ <= 9)
 	{
