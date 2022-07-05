@@ -7,13 +7,13 @@
  */
 void print_alphabet_x10(void)
 {
-	int product = 0;
+	int p;
 	char tAlpha;
 
-	while (product <= 9)
+	for (p = 0; p <= 9; p++)
 	{
 
-	for (tAlpha = 97; tAlpha = 122; tAlpha++)
+	for (tAlpha = 97; tAlpha <= 122; tAlpha++)
 
 	_putchar(tAlpha);
 
