@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _abs - Entry point
  *@t: computes the absolute value of an integer
@@ -7,8 +8,8 @@
  */
 int _abs(int t)
 {
-	if (n >= 0)
-	return (n);
+	if (t >= 0)
+	return (t);
 	else
-		return (-n);
+		return (-t);
 }
