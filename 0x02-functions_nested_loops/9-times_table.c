@@ -7,22 +7,33 @@
  */
 void times_table(void)
 {
-	int ranNum, mTable, prodt;
+	int ran, tab, prod;
 
-	for (ranNum = 0; ranNum <= 9; ranNum++)
+	for (ran = 0; ran < 10; ran++)
 	{
-	_putchar ('0');
-	for (mTable = 1; mTable <= 9; mTable++)
-	{
-	_putchar(',');
-	_putchar(' ');
-	prodt = ranNum * mTable;
-	if (prodt <= 9)
-	_putchar(' ');
-	else
-	_putchar((prodt / 10) + '0');
-	_putchar((prodt % 10) + '0');
-	}
-	_putchar('\n');
+		for (tab = 0; tab < 10; tab++)
+		{
+			prod = tab * ran;
+			if (tab == 0)
+			{
+				_putchar(prod + '0');
+			}
+			if (prod < 10 && tab != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(prod + '0');
+			}
+			else if (prod >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '0');
+			}
+		}
+		_putchar('\n');
 	}
 }
+
