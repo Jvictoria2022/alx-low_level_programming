@@ -7,13 +7,13 @@
  */
 void print_diagonals(int n)
 {
-	int a, b;
+	int y, b;
 
 	if (n <= 0)
 		_putchar('\n');
-	for (a = 0; a < n; a++)
+	for (y = 0; y < n; y++)
 	{
-		for (b = 0; b < a; b++)
+		for (b = 0; b < y; b++)
 		{
 			_putchar(' ');
 		}
