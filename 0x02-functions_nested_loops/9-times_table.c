@@ -7,34 +7,33 @@
  */
 void times_table(void)
 {
-	int ran, tab, prod;
+	int i, j, k;
 
-	for (ran = 0; ran < 10; ran++)
+	for (i = 0; i < 10; i++)
 	{
-		for (tab = 0; tab < 10; tab++)
+		for (j = 0; j < 10; j++)
 		{
-			prod = tab * ran;
-			if (tab == 0)
+			k = j * i;
+			if (j == 0)
 			{
-				_putchar(prod + '0');
+				_putchar(k + '0');
 			}
-			if (prod < 10 && tab != 0)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(prod + '0');
-			}
-			else if (prod >= 10)
+			if (k < 10 && j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar((prod / 10) + '0');
-				_putchar((prod % 10) + '0');
+				_putchar(' ');
+				_putchar(k + '0');
 			}
-			else
-		_putchar('\n');
+			else if (k >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
+			}
 		}
+		_putchar('\n');
 	}
 }
 
