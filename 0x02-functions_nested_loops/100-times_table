@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+ *
+ *
+ *
+ *
+ */
+void print_times_table(int n)
+{
+	int s = 0, inc, t;
+	if (n < 0 || n > 15)
+		return;
+	while (s <= n)
+	{
+		for (t = 0; t <= n; t++)
+		{
+			inc = s * t;
+			if
