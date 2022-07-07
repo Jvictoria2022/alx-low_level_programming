@@ -26,6 +26,12 @@ void print_times_table(int n)
 			}
 			else if (inc < 100)
 			{
+				_putchar(' ');
+				_putchar('0' + inc / 10);
+				_putchar('0' + inc % 10);
+			}
+			else
+			{
 				_putchar('0' + inc / 100);
 				_putchar('0' + (inc - 100) / 10);
 				_putchar('0' + inc % 10);
