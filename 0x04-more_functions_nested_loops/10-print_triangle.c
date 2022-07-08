@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- *Print_triangle - Entry point
- *prints a trianle shape
- *@size of a triangle
+ *print_triangle - Entry point,prints a triangular shape
+ *@size: of a triangl
+ *
  *Return: void
  */
 void print_triangle(int size)
 {
 	int row, lashes, gaps;
-	
+
 	if (size <= 0)
 	{
 		_putchar('\n');
