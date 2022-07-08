@@ -2,7 +2,7 @@
 /**
  *Print_triangle - Entry point
  *prints a trianle shape
- *
+ *@size of a triangle
  *Return: void
  */
 void print_triangle(int size)
@@ -22,9 +22,9 @@ void print_triangle(int size)
 				_putchar(' ');
 			}
 
-				for (lashes =1; lashes <= row; lashes++)
+				for (lashes = 1; lashes <= row; lashes++)
 				{
-					_putchar("#");
+					_putchar('*');
 				}
 				_putchar('\n');
 		}
