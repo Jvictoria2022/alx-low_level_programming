@@ -11,6 +11,8 @@ void print_diagonals(int n)
 
 	if (n <= 0)
 		_putchar('\n');
+	else
+	{
 	for (y = 0; y < n; y++)
 	{
 		for (b = 0; b < y; b++)
@@ -19,5 +21,6 @@ void print_diagonals(int n)
 		}
 		_putchar('\\');
 		_putchar('\n');
+	}
 	}
 }
