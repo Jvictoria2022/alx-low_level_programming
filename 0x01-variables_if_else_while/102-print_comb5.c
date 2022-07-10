@@ -1,36 +1,45 @@
 #include <stdio.h>
+
 /**
- * main - prints all possible combinations of two two-digit numbers.
- * printed in ascending order,considered as the same combination of the numbers
- *
- * Return: Always 0 (Success)
- */
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int num1, num2, num3, num4, num5, num6;
+	int c, i, k, j;
 
-	for (num5 = 0; num5 < 98; num5++)
+	for (c = 48; c <= 57; c++)
 	{
-	num1 = num5 / 10;
-	num2 = num5 % 10;
-	for (num6 = 0; num6 < 99; num6++)
-	{
-	num3 = num6 / 10;
-	num4 = num6 % 10;
-	if (num1 < num3 || (num1 == num3 && num2 < num4))
-	{
-	putchar(num1 + '0');
-	putchar(num2 + '0');
-	putchar(32);
-	putchar(num3 + '0');
-	putchar(num4 + '0');
-	{
-	putchar(44);
-	putchar(32);
+		for (i = 48; i <= 57; i++)
+		{
+			for (k = 48; k <= 57; k++)
+			{
+				for (j = 48; j <= 57; j++)
+				{
+					if (((k + j) > (c + i) &&  k >= c) || c < k)
+					{
+						putchar(c);
+						putchar(i);
+						putchar(' ');
+						putchar(k);
+						putchar(j);
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+					}
+				}
+			}
+		}
 	}
-	}
-	}
-	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
+
+
